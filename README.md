@@ -62,3 +62,4 @@ Set the `PORT` environment variable if your host requires it (most do this autom
 - Contact: ruefferg@mcmaster.ca
 - Voting dates: Wednesday March 25 – Friday March 27
 # grady-capaign
+# grady-capaign
