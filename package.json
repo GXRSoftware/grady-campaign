@@ -1,0 +1,13 @@
+{
+  "name": "grady-campaign",
+  "version": "1.0.0",
+  "description": "Grady Rueffer CS Representative Campaign Site",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.22.1"
+  }
+}

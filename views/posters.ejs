@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posters &ndash; Grady Rueffer for CS Representative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+<%- include('partials/nav') %>
+
+<div class="page-header">
+  <div class="label"><span class="label-line"></span>Campaign Materials<span class="label-line"></span></div>
+  <h1>Posters</h1>
+  <p>Download and share campaign posters to help spread the word across campus.</p>
+</div>
+
+<section class="posters-section">
+  <!--
+    HOW TO ADD A POSTER:
+    1. Place your poster image (e.g. poster1.jpg) in public/images/
+    2. Uncomment and update one of the .poster-card blocks below:
+       - Update <img src="/images/your-file.jpg">
+       - Update the poster name label
+       - Update the download href to "/images/your-file.jpg"
+  -->
+
+  <div class="poster-grid">
+
+    <!-- POSTER CARD TEMPLATE — duplicate and fill in for each poster
+    <div class="poster-card">
+      <div class="poster-img">
+        <img src="/images/poster1.jpg" alt="Campaign Poster 1" />
+      </div>
+      <div class="poster-info">
+        <span class="poster-name">General Poster</span>
+        <a href="/images/poster1.jpg" download class="poster-download">&#8595; Download</a>
+      </div>
+    </div>
+    -->
+
+    <div class="empty-state" style="grid-column:1/-1;">
+      <div class="icon">&#128247;</div>
+      <p>Posters coming soon. Check back closer to voting week (March 25&ndash;27).</p>
+    </div>
+
+  </div>
+</section>
+
+<%- include('partials/footer') %>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
