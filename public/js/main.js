@@ -1,4 +1,5 @@
 // Grady Rueffer Campaign Site — main.js
+import { Analytics } from "@vercel/analytics/next"
 // ── Hamburger menu ──
 const hamburger = document.getElementById('nav-hamburger');
 const mobileMenu = document.getElementById('mobile-menu');
