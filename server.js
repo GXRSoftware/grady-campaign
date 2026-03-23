@@ -13,3 +13,14 @@ app.get('/posters', (req, res) => res.render('posters'));
 app.listen(PORT, () => {
   console.log(`Grady Rueffer campaign site running at http://localhost:${PORT}`);
 });
+
+app.use((req, res, next) => {
+  // Skip static assets
+  if (req.path.startsWith('/css') || req.path.startsWith('/js') || req.path.startsWith('/images')) {
+    return next();
+  }
+  const timestamp = new Date().toISOString();
+  const ip = req.headers['x-forwarded-for'] || req.socket.remoteAddress;
+  console.log(`[${timestamp}] ${req.method} ${req.path} — IP: ${ip}`);
+  next();
+});
